@@ -1,0 +1,51 @@
+1. Null er ekki variable heldur seigir það að hér á EKKI að vera neitt.
+   Undefined er variable ekki með value.
+
+2.Use strict keyrir kóða í "strict mode," sem leyfir þér t.d ekki að nota ólýsta variablaþ
+  Það er til að passa ritara frá því að breyta "lélegum kóða" yfir í alvöru villur 
+  Þetta passar up á klaufavillur í framtíð
+
+3.Var, Let & Const: Var getur alltaf verið yfirritað með öðru var. 
+  Let getur bara verið yfirritað  í öðru block og mun svo breytast til baka þegar það block er búið.
+  Const getur Aldrei verið yfiritað.
+
+4.
+var x;
+for (x = 9; x > 0; x--) {
+   console.log("hello " + x);
+}
+
+5.
+function add(a, b) {
+  
+  return a + b;
+
+};
+var x = add(1,2)
+
+console.log(x)
+
+
+var add = function(a, b) {
+  
+  return a + b;
+
+};
+
+
+var x = add(1,2)
+
+console.log(x)
+
+
+var add = (a, b) => a + b;
+
+
+var x = add(1,2)
+
+console.log(x)
+
+6. (function() { alert('Hello World'); })(); 
+ fyrst kemur svigi í kringum function, svo kemur svigi sem gæti en gefur engin command, svo er alert svigin og svo annar commandlaus svigi.
+
+7. a variable er Let, þannig að þegar function b fer svo í function a inni í sér gleymist variable a og verður aftur 1.
